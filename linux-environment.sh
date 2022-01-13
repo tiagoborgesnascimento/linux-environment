@@ -21,6 +21,8 @@ apt-cache policy docker-ce;
 sudo apt install -y docker-ce;
 sudo usermod -aG docker ${USER};
 
+sudo apt install -y docker-compose
+
 #kubernetes
 
 sudo apt-get update;
