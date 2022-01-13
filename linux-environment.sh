@@ -59,7 +59,8 @@ source ~/.bashrc
 nvm list-remote
 nvm install-latest-npm
 
-
+#ifconfig
+sudo apt install -y net-tools
 
 
 
