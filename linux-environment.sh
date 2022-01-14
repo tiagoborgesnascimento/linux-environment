@@ -5,6 +5,13 @@ sudo apt install -y default-jdk
 sudo apt update
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+
+#maven
+
+sudo apt install -y maven
+export M2_HOME=/usr/share/maven
+export PATH=$PATH:$M2_HOME/bin
 
 #python
 
@@ -53,6 +60,7 @@ code --install-extension redhat.vscode-yaml
 code --install-extension abusaidm.html-snippets
 code --install-extension zhuangtongfa.material-theme
 code --install-extension pkief.material-icon-theme
+code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 
 #node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh
